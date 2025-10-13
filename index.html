@@ -6,9 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/terminal.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      section {
+        scroll-margin-top: 80px;
+      }
+      #intro, #learning-outcomes, #secure-coding, #advanced-oop, #patterns, #architecture {
+        display: block;
+        margin-top: 80px;
+        padding: 20px;
+        border-top: 1px solid #1f2937;
+      }
+      #intro h2 {
+        color: #10b981;
+        font-family: monospace;
+        margin-bottom: 10px;
+      }
+      #intro p {
+        color: #d1d5db;
+        font-size: 15px;
+        line-height: 1.6;
+      }
+    </style>
   </head>
-  <body class="is-preload terminal-body">
 
+  <body class="is-preload terminal-body">
     <section class="terminal-wrap">
       <h1 class="h1">e-Portfolio Index ▸ Advanced Object-Oriented Design & Programming</h1>
 
@@ -24,31 +48,75 @@
           <div class="prompt"><span class="path">/home/student/aoodp</span><span class="dollar">$</span> help --sections</div>
 
           <div class="grid">
-            <a class="card" href="#intro"><div class="row"><svg class="icon" width="20" height="20" viewBox="0 0 24 24"><path d="M3 7a2 2 0 012-2h4l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" stroke="#10b981" stroke-width="1.5"/></svg><div><h3>Intro / Module Context</h3><p>Overview of the module and learning scope.</p></div></div></a>
+            <a class="card" href="#intro">
+              <div class="row">
+                <svg class="icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M3 7a2 2 0 012-2h4l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"
+                        stroke="#10b981" stroke-width="1.5"/>
+                </svg>
+                <div><h3>Intro / Module Context</h3><p>Overview of the module and learning scope.</p></div>
+              </div>
+            </a>
 
-            <a class="card" href="#learning-outcomes"><div class="row"><svg class="icon" width="20" height="20" viewBox="0 0 24 24"><path d="M3 7a2 2 0 012-2h4l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" stroke="#10b981" stroke-width="1.5"/></svg><div><h3>Learning Outcomes</h3><p>Evidence mapping for each learning objective.</p></div></div></a>
+            <a class="card" href="#learning-outcomes">
+              <div class="row">
+                <svg class="icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M3 7a2 2 0 012-2h4l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"
+                        stroke="#10b981" stroke-width="1.5"/>
+                </svg>
+                <div><h3>Learning Outcomes</h3><p>Evidence mapping for each learning objective.</p></div>
+              </div>
+            </a>
 
-            <a class="card" href="#secure-coding"><div class="row"><svg class="icon" width="20" height="20" viewBox="0 0 24 24"><path d="M3 7a2 2 0 012-2h4l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" stroke="#10b981" stroke-width="1.5"/></svg><div><h3>Secure Coding</h3><p>Defensive programming and best practices.</p></div></div></a>
+            <a class="card" href="#secure-coding">
+              <div class="row">
+                <svg class="icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M3 7a2 2 0 012-2h4l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"
+                        stroke="#10b981" stroke-width="1.5"/>
+                </svg>
+                <div><h3>Secure Coding</h3><p>Defensive programming and best practices.</p></div>
+              </div>
+            </a>
 
-            <a class="card" href="#advanced-oop"><div class="row"><svg class="icon" width="20" height="20" viewBox="0 0 24 24"><path d="M3 7a2 2 0 012-2h4l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" stroke="#10b981" stroke-width="1.5"/></svg><div><h3>Advanced OOP</h3><p>Applying SOLID, inheritance, and abstraction.</p></div></div></a>
+            <a class="card" href="#advanced-oop">
+              <div class="row">
+                <svg class="icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M3 7a2 2 0 012-2h4l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"
+                        stroke="#10b981" stroke-width="1.5"/>
+                </svg>
+                <div><h3>Advanced OOP</h3><p>Applying SOLID, inheritance, and abstraction.</p></div>
+              </div>
+            </a>
 
-            <a class="card" href="#patterns"><div class="row"><svg class="icon" width="20" height="20" viewBox="0 0 24 24"><path d="M3 7a2 2 0 012-2h4l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" stroke="#10b981" stroke-width="1.5"/></svg><div><h3>Design Patterns</h3><p>Strategy, Adapter, Factory, Bridge, etc.</p></div></div></a>
+            <a class="card" href="#patterns">
+              <div class="row">
+                <svg class="icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M3 7a2 2 0 012-2h4l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"
+                        stroke="#10b981" stroke-width="1.5"/>
+                </svg>
+                <div><h3>Design Patterns</h3><p>Strategy, Adapter, Factory, Bridge, etc.</p></div>
+              </div>
+            </a>
 
-            <a class="card" href="#architecture"><div class="row"><svg class="icon" width="20" height="20" viewBox="0 0 24 24"><path d="M3 7a2 2 0 012-2h4l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" stroke="#10b981" stroke-width="1.5"/></svg><div><h3>Software Architecture</h3><p>Layered and scalable system designs.</p></div></div></a>
+            <a class="card" href="#architecture">
+              <div class="row">
+                <svg class="icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M3 7a2 2 0 012-2h4l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"
+                        stroke="#10b981" stroke-width="1.5"/>
+                </svg>
+                <div><h3>Software Architecture</h3><p>Layered and scalable system designs.</p></div>
+              </div>
+            </a>
           </div>
 
-          <div class="prompt" style="margin-top:16px"><span class="path">/home/student/aoodp</span><span class="dollar">$</span> search --artefacts --unit=3,5,8 --capstone</div>
-          <div class="tags">
-            <span>architecture</span><span>security</span><span>patterns</span><span>ai/ds</span><span>case-studies</span><span>evidence</span>
+          <div class="prompt" style="margin-top:16px">
+            <span class="path">/home/student/aoodp</span><span class="dollar">$</span>
+            search --artefacts --unit=3,5,8 --capstone
           </div>
-
-          <div class="prompt" style="margin-top:16px"><span class="path">/home/student/aoodp</span><span class="dollar">$</span> open #intro</div>
         </div>
       </div>
 
-      <div class="footer-tip">Tip: update each anchor to include your real section content.</div>
-
-      <!-- Intro / Module Context -->
+      <!-- Intro / Module Context Section -->
       <section id="intro">
         <h2>Intro / Module Context</h2>
         <p>
