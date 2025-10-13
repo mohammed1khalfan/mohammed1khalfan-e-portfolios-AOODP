@@ -76,6 +76,16 @@
                 <div><h3>Learning Outcomes — Evidence Map</h3><p>Mapping each outcome to artefacts and reflections.</p></div>
               </div>
             </a>
+
+            <a class="card" href="#secure-coding">
+              <div class="row">
+                <svg class="icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M3 7a2 2 0 012-2h4l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"
+                        stroke="#10b981" stroke-width="1.5"/>
+                </svg>
+                <div><h3>Secure Coding Practices</h3><p>Defensive programming and data protection measures.</p></div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -160,6 +170,41 @@
           to architecting real-world, secure, and data-driven systems. 
           Each artefact illustrates not only technical competence but also professional awareness of 
           maintainability, reliability, and security in enterprise environments.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- Secure Coding Section -->
+      <section id="secure-coding">
+        <h2>Secure Coding Practices</h2>
+
+        <p>
+          Throughout this module, I learned to integrate security at every stage of software development, 
+          ensuring that applications remain protected from common vulnerabilities. 
+          I adopted a <em>defense-in-depth</em> approach, combining multiple layers of protection — 
+          from secure design and validation to encrypted data handling and proper exception management.
+        </p>
+
+        <p>
+          In my <strong>Thread-Safe Banking System</strong>, all user inputs were validated using regular expressions 
+          to prevent injection attacks, while critical credentials were securely hashed using the 
+          <code>bcrypt</code> algorithm with unique salts. 
+          Additionally, sensitive operations such as fund transfers were protected by synchronized locks 
+          (<code>RLock</code>) to avoid race conditions and prevent unauthorized access.
+        </p>
+
+        <p>
+          During the <strong>Capstone Project</strong>, I implemented parameterized SQL queries 
+          and role-based access control to reduce the risk of injection attacks and privilege escalation. 
+          The system’s error-handling mechanisms avoided exposing stack traces or system internals to users, 
+          following secure-by-design principles.
+        </p>
+
+        <p>
+          Overall, these practices reflect a proactive security mindset — embedding resilience, privacy, 
+          and integrity directly into the software architecture — aligning with professional standards 
+          such as OWASP and NIST SP 800-53.
         </p>
       </section>
     </section>
