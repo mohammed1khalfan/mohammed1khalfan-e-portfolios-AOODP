@@ -1,0 +1,12 @@
+:root {--bg:#000;--fg:#f3f4f6;--accent:#10b981;--border:#1f2937;}
+body.terminal-body{background:var(--bg);color:var(--fg);}
+.terminal-wrap{max-width:1100px;margin:40px auto;padding:0 20px;}
+.terminal-window{background:#0b0b0b;border:1px solid var(--border);border-radius:12px;overflow:hidden;}
+.term-chrome{display:flex;gap:8px;padding:10px;background:#111827;}
+.dot{width:12px;height:12px;border-radius:50%;display:inline-block;}
+.dot.red{background:#ef4444}.dot.yellow{background:#f59e0b}.dot.green{background:#10b981}
+.term-title{margin-left:8px;color:#9ca3af;font-family:monospace;font-size:12px;}
+.prompt{font-family:monospace;font-size:14px;margin:10px 0;}
+.grid{display:grid;grid-template-columns:1fr;gap:10px;}
+.card{background:#000;border:1px solid #222;border-radius:8px;padding:12px;color:var(--fg);text-decoration:none;}
+.card:hover{background:#111;}
