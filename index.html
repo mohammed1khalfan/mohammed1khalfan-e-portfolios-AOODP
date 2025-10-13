@@ -1,7 +1,7 @@
-        <!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
   <head>
-    <title>AOODP e-Portfolio — Mohammed ALnuaimi </title>
+    <title>AOODP e-Portfolio — Mohammed Alnuaimi</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -41,7 +41,7 @@
 
   <body class="is-preload terminal-body">
     <section class="terminal-wrap">
-      <h1 class="h1">e-Portfolio Index ▸ Advanced Object-Oriented Design & Programming</h1>
+      <h1 class="h1">e-Portfolio ▸ Advanced Object-Oriented Design & Programming — Mohammed Alnuaimi</h1>
 
       <div class="terminal-window">
         <div class="term-chrome">
@@ -53,7 +53,7 @@
 
         <div class="term-content">
           <div class="prompt">
-            <span class="path">/home/student/aoodp</span><span class="dollar">$</span> help --sections
+            <span class="path">/home/mohammed/aoodp</span><span class="dollar">$</span> help --sections
           </div>
 
           <div class="grid">
@@ -84,6 +84,16 @@
                         stroke="#10b981" stroke-width="1.5"/>
                 </svg>
                 <div><h3>Secure Coding Practices</h3><p>Defensive programming and data protection measures.</p></div>
+              </div>
+            </a>
+
+            <a class="card" href="#advanced-oop">
+              <div class="row">
+                <svg class="icon" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M3 7a2 2 0 012-2h4l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"
+                        stroke="#10b981" stroke-width="1.5"/>
+                </svg>
+                <div><h3>Advanced OOP Principles</h3><p>Applying abstraction, inheritance, and polymorphism.</p></div>
               </div>
             </a>
           </div>
@@ -119,58 +129,19 @@
       <!-- Learning Outcomes Section -->
       <section id="learning-outcomes">
         <h2>Learning Outcomes — Evidence Map</h2>
-
-        <p>
-          This section maps the module’s learning outcomes to specific artefacts and reflections that 
-          demonstrate my understanding and application of advanced object-oriented design and programming concepts. 
-          Each outcome is supported by concrete evidence drawn from my coding exercises, case studies, and the final capstone project.
-        </p>
-
+        <p>This section maps the module’s learning outcomes to artefacts and reflections demonstrating my understanding of advanced OOP and software architecture.</p>
         <h3>1. Utilise design patterns to create reusable, maintainable, and flexible code</h3>
-        <p>
-          I applied multiple design patterns, including <em>Strategy</em>, <em>Adapter</em>, and <em>Composite</em>, 
-          to simplify complex systems and reduce code coupling. In my capstone project, I used the 
-          <em>Bridge</em> pattern to decouple business logic from data persistence, 
-          which improved maintainability and testing efficiency.
-        </p>
-
+        <p>I applied multiple design patterns, including <em>Strategy</em>, <em>Adapter</em>, and <em>Composite</em>, simplifying complex systems and reducing code coupling.</p>
         <h3>2. Design software architectures suitable for large-scale systems, ensuring security and robustness</h3>
-        <p>
-          Through the architecture design exercise (Unit 5), I implemented a layered architecture 
-          with well-defined interfaces and dependency injection. 
-          This structure enhanced scalability and allowed integration with future AI and analytics modules 
-          while maintaining secure boundaries between layers.
-        </p>
-
-        <h3>3. Develop software solutions adaptable for AI models and efficient for data science tasks</h3>
-        <p>
-          I explored modular pipelines that preprocess data and dynamically load machine-learning models. 
-          This adaptability was demonstrated in my project’s analytics subsystem, where I created a Python component 
-          that integrates model inference seamlessly with data-driven decision processes.
-        </p>
-
+        <p>I implemented layered architecture with dependency injection to improve scalability and maintain security boundaries.</p>
+        <h3>3. Develop software solutions adaptable for AI models and data science tasks</h3>
+        <p>Created modular pipelines to preprocess data and dynamically load machine learning models integrated into analytics subsystems.</p>
         <h3>4. Apply advanced OOP principles to solve complex software problems</h3>
-        <p>
-          I applied abstraction, polymorphism, and encapsulation across multiple exercises, 
-          creating extensible class hierarchies. For example, in the 
-          <em>Thread-Safe Banking System</em> activity, I implemented synchronized access 
-          with <code>RLock</code> objects to avoid race conditions.
-        </p>
-
-        <h3>5. Understand and implement secure coding practices in software development</h3>
-        <p>
-          Security was integrated into every project stage — including input validation, 
-          parameterized queries, and password hashing using <code>bcrypt</code>. 
-          These practices minimized vulnerabilities and reflected the module’s emphasis on defensive programming.
-        </p>
-
+        <p>Used abstraction, polymorphism, and encapsulation across exercises, notably in the <em>Thread-Safe Banking System</em> using <code>RLock</code>.</p>
+        <h3>5. Implement secure coding practices in software development</h3>
+        <p>Applied input validation, parameterized queries, and password hashing using <code>bcrypt</code>, reflecting defensive programming principles.</p>
         <h3>Summary Reflection</h3>
-        <p>
-          Overall, these outcomes demonstrate my growth from understanding theoretical OOP principles 
-          to architecting real-world, secure, and data-driven systems. 
-          Each artefact illustrates not only technical competence but also professional awareness of 
-          maintainability, reliability, and security in enterprise environments.
-        </p>
+        <p>These outcomes show my evolution from theory to practice in secure, maintainable, and scalable software design.</p>
       </section>
 
       <div class="divider"></div>
@@ -178,33 +149,36 @@
       <!-- Secure Coding Section -->
       <section id="secure-coding">
         <h2>Secure Coding Practices</h2>
+        <p>I integrated security at every stage of development, adopting a <em>defense-in-depth</em> approach combining validation, encryption, and safe exception handling.</p>
+        <p>In the <strong>Thread-Safe Banking System</strong>, inputs were validated, credentials hashed with <code>bcrypt</code>, and <code>RLock</code> used for safe concurrent operations.</p>
+        <p>In the <strong>Capstone Project</strong>, I implemented parameterized queries and RBAC to prevent injections and privilege escalation while ensuring secure error handling.</p>
+        <p>These methods align with <strong>OWASP</strong> and <strong>NIST SP 800-53</strong> standards, embedding privacy and integrity within the architecture.</p>
+      </section>
 
+      <div class="divider"></div>
+
+      <!-- Advanced OOP Section -->
+      <section id="advanced-oop">
+        <h2>Advanced OOP Principles</h2>
         <p>
-          Throughout this module, I learned to integrate security at every stage of software development, 
-          ensuring that applications remain protected from common vulnerabilities. 
-          I adopted a <em>defense-in-depth</em> approach, combining multiple layers of protection — 
-          from secure design and validation to encrypted data handling and proper exception management.
+          This section highlights my ability to apply advanced object-oriented programming (OOP) principles such as abstraction, 
+          encapsulation, inheritance, and polymorphism to develop scalable and maintainable software systems. 
+          These principles collectively form a foundation for reliable and extensible architectures.
         </p>
-
         <p>
-          In my <strong>Thread-Safe Banking System</strong>, all user inputs were validated using regular expressions 
-          to prevent injection attacks, while critical credentials were securely hashed using the 
-          <code>bcrypt</code> algorithm with unique salts. 
-          Additionally, sensitive operations such as fund transfers were protected by synchronized locks 
-          (<code>RLock</code>) to avoid race conditions and prevent unauthorized access.
+          In the <strong>Thread-Safe Banking System</strong>, I used encapsulation to protect data integrity, 
+          ensuring balance updates only through controlled methods. Each transaction type (deposit, withdrawal, transfer) 
+          shared a unified interface — a clear demonstration of polymorphism. 
+          Inheritance simplified code reuse, while abstraction defined flexible interfaces for specialized banking operations.
         </p>
-
         <p>
-          During the <strong>Capstone Project</strong>, I implemented parameterized SQL queries 
-          and role-based access control to reduce the risk of injection attacks and privilege escalation. 
-          The system’s error-handling mechanisms avoided exposing stack traces or system internals to users, 
-          following secure-by-design principles.
+          During my <strong>Capstone Project</strong>, I designed a modular class hierarchy for the analytics engine. 
+          The <em>Factory Method</em> pattern was used to dynamically create components such as data preprocessors and model evaluators, 
+          minimizing coupling between layers.
         </p>
-
         <p>
-          Overall, these practices reflect a proactive security mindset — embedding resilience, privacy, 
-          and integrity directly into the software architecture — aligning with professional standards 
-          such as OWASP and NIST SP 800-53.
+          Adhering to SOLID and GRASP principles allowed me to produce testable, maintainable, and professional-grade code 
+          — strengthening both my technical expertise and my understanding of software craftsmanship.
         </p>
       </section>
     </section>
