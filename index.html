@@ -13,21 +13,28 @@
       section {
         scroll-margin-top: 80px;
       }
-      #intro, #learning-outcomes, #secure-coding, #advanced-oop, #patterns, #architecture {
-        display: block;
-        margin-top: 80px;
-        padding: 20px;
-        border-top: 1px solid #1f2937;
-      }
-      #intro h2 {
-        color: #10b981;
+      body {
+        background: #000;
+        color: #f3f4f6;
         font-family: monospace;
+      }
+      h2 {
+        color: #10b981;
         margin-bottom: 10px;
       }
-      #intro p {
+      p {
         color: #d1d5db;
         font-size: 15px;
         line-height: 1.6;
+      }
+      h3 {
+        color: #22d3ee;
+        margin-top: 18px;
+        margin-bottom: 8px;
+      }
+      .divider {
+        border-top: 1px solid #1f2937;
+        margin: 60px 0 30px 0;
       }
     </style>
   </head>
@@ -45,7 +52,9 @@
         </div>
 
         <div class="term-content">
-          <div class="prompt"><span class="path">/home/student/aoodp</span><span class="dollar">$</span> help --sections</div>
+          <div class="prompt">
+            <span class="path">/home/student/aoodp</span><span class="dollar">$</span> help --sections
+          </div>
 
           <div class="grid">
             <a class="card" href="#intro">
@@ -64,59 +73,14 @@
                   <path d="M3 7a2 2 0 012-2h4l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"
                         stroke="#10b981" stroke-width="1.5"/>
                 </svg>
-                <div><h3>Learning Outcomes</h3><p>Evidence mapping for each learning objective.</p></div>
+                <div><h3>Learning Outcomes — Evidence Map</h3><p>Mapping each outcome to artefacts and reflections.</p></div>
               </div>
             </a>
-
-            <a class="card" href="#secure-coding">
-              <div class="row">
-                <svg class="icon" width="20" height="20" viewBox="0 0 24 24">
-                  <path d="M3 7a2 2 0 012-2h4l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"
-                        stroke="#10b981" stroke-width="1.5"/>
-                </svg>
-                <div><h3>Secure Coding</h3><p>Defensive programming and best practices.</p></div>
-              </div>
-            </a>
-
-            <a class="card" href="#advanced-oop">
-              <div class="row">
-                <svg class="icon" width="20" height="20" viewBox="0 0 24 24">
-                  <path d="M3 7a2 2 0 012-2h4l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"
-                        stroke="#10b981" stroke-width="1.5"/>
-                </svg>
-                <div><h3>Advanced OOP</h3><p>Applying SOLID, inheritance, and abstraction.</p></div>
-              </div>
-            </a>
-
-            <a class="card" href="#patterns">
-              <div class="row">
-                <svg class="icon" width="20" height="20" viewBox="0 0 24 24">
-                  <path d="M3 7a2 2 0 012-2h4l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"
-                        stroke="#10b981" stroke-width="1.5"/>
-                </svg>
-                <div><h3>Design Patterns</h3><p>Strategy, Adapter, Factory, Bridge, etc.</p></div>
-              </div>
-            </a>
-
-            <a class="card" href="#architecture">
-              <div class="row">
-                <svg class="icon" width="20" height="20" viewBox="0 0 24 24">
-                  <path d="M3 7a2 2 0 012-2h4l2 2h6a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"
-                        stroke="#10b981" stroke-width="1.5"/>
-                </svg>
-                <div><h3>Software Architecture</h3><p>Layered and scalable system designs.</p></div>
-              </div>
-            </a>
-          </div>
-
-          <div class="prompt" style="margin-top:16px">
-            <span class="path">/home/student/aoodp</span><span class="dollar">$</span>
-            search --artefacts --unit=3,5,8 --capstone
           </div>
         </div>
       </div>
 
-      <!-- Intro / Module Context Section -->
+      <!-- Intro Section -->
       <section id="intro">
         <h2>Intro / Module Context</h2>
         <p>
@@ -127,18 +91,75 @@
           It also strengthened my understanding of architectural design, concurrency control, 
           and the integration of artificial intelligence and data-driven components in modern applications.
         </p>
-
         <p>
           The portfolio presents a collection of practical artefacts — including coding exercises, 
           design case studies, and the final capstone project — that demonstrate how theoretical concepts 
           were translated into working software. Each artefact is aligned with the module’s learning outcomes 
           and showcases my development of analytical, technical, and professional competencies.
         </p>
-
         <p>
           Overall, this work reflects the progression from mastering OOP fundamentals 
           to designing enterprise-level solutions using secure coding practices, multithreading, 
           and advanced architectural strategies that support long-term software evolution.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- Learning Outcomes Section -->
+      <section id="learning-outcomes">
+        <h2>Learning Outcomes — Evidence Map</h2>
+
+        <p>
+          This section maps the module’s learning outcomes to specific artefacts and reflections that 
+          demonstrate my understanding and application of advanced object-oriented design and programming concepts. 
+          Each outcome is supported by concrete evidence drawn from my coding exercises, case studies, and the final capstone project.
+        </p>
+
+        <h3>1. Utilise design patterns to create reusable, maintainable, and flexible code</h3>
+        <p>
+          I applied multiple design patterns, including <em>Strategy</em>, <em>Adapter</em>, and <em>Composite</em>, 
+          to simplify complex systems and reduce code coupling. In my capstone project, I used the 
+          <em>Bridge</em> pattern to decouple business logic from data persistence, 
+          which improved maintainability and testing efficiency.
+        </p>
+
+        <h3>2. Design software architectures suitable for large-scale systems, ensuring security and robustness</h3>
+        <p>
+          Through the architecture design exercise (Unit 5), I implemented a layered architecture 
+          with well-defined interfaces and dependency injection. 
+          This structure enhanced scalability and allowed integration with future AI and analytics modules 
+          while maintaining secure boundaries between layers.
+        </p>
+
+        <h3>3. Develop software solutions adaptable for AI models and efficient for data science tasks</h3>
+        <p>
+          I explored modular pipelines that preprocess data and dynamically load machine-learning models. 
+          This adaptability was demonstrated in my project’s analytics subsystem, where I created a Python component 
+          that integrates model inference seamlessly with data-driven decision processes.
+        </p>
+
+        <h3>4. Apply advanced OOP principles to solve complex software problems</h3>
+        <p>
+          I applied abstraction, polymorphism, and encapsulation across multiple exercises, 
+          creating extensible class hierarchies. For example, in the 
+          <em>Thread-Safe Banking System</em> activity, I implemented synchronized access 
+          with <code>RLock</code> objects to avoid race conditions.
+        </p>
+
+        <h3>5. Understand and implement secure coding practices in software development</h3>
+        <p>
+          Security was integrated into every project stage — including input validation, 
+          parameterized queries, and password hashing using <code>bcrypt</code>. 
+          These practices minimized vulnerabilities and reflected the module’s emphasis on defensive programming.
+        </p>
+
+        <h3>Summary Reflection</h3>
+        <p>
+          Overall, these outcomes demonstrate my growth from understanding theoretical OOP principles 
+          to architecting real-world, secure, and data-driven systems. 
+          Each artefact illustrates not only technical competence but also professional awareness of 
+          maintainability, reliability, and security in enterprise environments.
         </p>
       </section>
     </section>
