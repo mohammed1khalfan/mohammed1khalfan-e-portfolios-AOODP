@@ -8,201 +8,175 @@
     <link rel="stylesheet" href="assets/css/terminal.css" />
     <style>
       html { scroll-behavior: smooth; }
-      section { scroll-margin-top: 80px; }
       body {
-        background: #000;
+        background-color: #000;
         color: #f3f4f6;
         font-family: monospace;
+        margin: 0;
+        padding: 20px;
       }
-      h2 { color: #10b981; margin-bottom: 10px; }
-      h3 { color: #22d3ee; margin-top: 18px; margin-bottom: 8px; }
-      p, li { color: #d1d5db; font-size: 15px; line-height: 1.6; }
+      h2 { color: #10b981; margin-top: 40px; }
+      p, li { color: #d1d5db; line-height: 1.6; }
       ul { margin-left: 25px; }
-      .divider {
-        border-top: 1px solid #1f2937;
-        margin: 60px 0 30px 0;
-      }
-      a.card { text-decoration: none; color: inherit; }
-      a.card:hover h3 { color: #34d399; }
+      .divider { border-top: 1px solid #1f2937; margin: 50px 0; }
+      .nav { margin-bottom: 20px; }
+      a { color: #34d399; text-decoration: none; }
+      a:hover { color: #22d3ee; }
     </style>
   </head>
 
-  <body class="is-preload terminal-body">
-    <section class="terminal-wrap">
-      <h1 class="h1">e-Portfolio ▸ Advanced Object-Oriented Design & Programming — Mohammed Alnuaimi</h1>
+  <body>
+    <h1>e-Portfolio ▸ Advanced Object-Oriented Design & Programming — Mohammed Alnuaimi</h1>
 
-      <div class="terminal-window">
-        <div class="term-chrome">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
-          <span class="term-title">AOODP:e-Portfolio — terminal</span>
-        </div>
+    <div class="nav">
+      <p>/home/mohammed/aoodp$ help --sections</p>
+      <ul>
+        <li><a href="#intro">Intro / Module Context</a></li>
+        <li><a href="#learning">Learning Outcomes — Evidence Map</a></li>
+        <li><a href="#secure">Secure Coding Practices</a></li>
+        <li><a href="#oop">Advanced OOP Principles</a></li>
+        <li><a href="#patterns">Design Patterns</a></li>
+        <li><a href="#architecture">Software Architecture</a></li>
+        <li><a href="#ai">AI & Data Science Adaptability</a></li>
+        <li><a href="#artefacts">Artefacts Showcase</a></li>
+        <li><a href="#skills">Academic & Employability Skills</a></li>
+        <li><a href="#pdp">Professional Development Plan</a></li>
+      </ul>
+    </div>
 
-        <div class="term-content">
-          <div class="prompt">
-            <span class="path">/home/mohammed/aoodp</span><span class="dollar">$</span> help --sections
-          </div>
+    <div class="divider"></div>
 
-          <div class="grid">
-            <a class="card" href="#intro"><div class="row"><h3>Intro / Module Context</h3></div></a>
-            <a class="card" href="#learning-outcomes"><div class="row"><h3>Learning Outcomes — Evidence Map</h3></div></a>
-            <a class="card" href="#secure-coding"><div class="row"><h3>Secure Coding Practices</h3></div></a>
-            <a class="card" href="#advanced-oop"><div class="row"><h3>Advanced OOP Principles</h3></div></a>
-            <a class="card" href="#patterns"><div class="row"><h3>Design Patterns</h3></div></a>
-            <a class="card" href="#architecture"><div class="row"><h3>Software Architecture</h3></div></a>
-            <a class="card" href="#ai-adaptability"><div class="row"><h3>AI & Data Science Adaptability</h3></div></a>
-            <a class="card" href="#artefacts"><div class="row"><h3>Artefacts Showcase</h3></div></a>
-            <a class="card" href="#skills"><div class="row"><h3>Academic & Employability Skills</h3></div></a>
-            <a class="card" href="#pdp"><div class="row"><h3>Professional Development Plan</h3></div></a>
-            <a class="card" href="#references"><div class="row"><h3>References</h3></div></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Intro -->
-      <section id="intro">
-        <h2>Intro / Module Context</h2>
-        <p>This e-Portfolio represents my learning journey throughout the <strong>Advanced Object-Oriented Design and Programming (AOODP)</strong> module. It documents the transition from theory to practice through secure, scalable, and maintainable solutions.</p>
-        <p>The module developed my understanding of architecture, design patterns, multithreading, and secure coding. Artefacts like the Thread-Safe Banking System and the Capstone Project reflect growth in both academic and professional capability.</p>
-      </section>
-
-      <div class="divider"></div>
-
-      <!-- Learning Outcomes -->
-      <section id="learning-outcomes">
-        <h2>Learning Outcomes — Evidence Map</h2>
-        <ul>
-          <li><strong>Design Patterns:</strong> Applied Strategy, Adapter, and Composite patterns for reusability and flexibility.</li>
-          <li><strong>Architectural Design:</strong> Created layered systems ensuring scalability and robustness.</li>
-          <li><strong>AI Integration:</strong> Developed modular data pipelines for machine learning compatibility.</li>
-          <li><strong>Advanced OOP:</strong> Used abstraction, encapsulation, and polymorphism to solve complex problems.</li>
-          <li><strong>Secure Coding:</strong> Embedded validation, parameterized queries, and encryption into all solutions.</li>
-        </ul>
-      </section>
-
-      <div class="divider"></div>
-
-      <!-- Secure Coding -->
-      <section id="secure-coding">
-        <h2>Secure Coding Practices</h2>
-        <p>Security was applied at every stage through a <em>defense-in-depth</em> strategy.</p>
-        <p>In the <strong>Thread-Safe Banking System</strong>, I validated inputs, secured passwords with <code>bcrypt</code>, and used <code>RLock</code> to avoid race conditions.</p>
-        <p>In the <strong>Capstone Project</strong>, I implemented parameterized SQL queries and RBAC to prevent injections and escalation attacks. These align with <strong>OWASP</strong> and <strong>NIST SP 800-53</strong> frameworks.</p>
-      </section>
-
-      <div class="divider"></div>
-
-      <!-- Advanced OOP -->
-      <section id="advanced-oop">
-        <h2>Advanced OOP Principles</h2>
-        <p>Applied core OOP concepts: abstraction, inheritance, encapsulation, and polymorphism.</p>
-        <p>In the <strong>Banking System</strong>, encapsulation safeguarded balance integrity, inheritance streamlined transactions, and polymorphism unified interfaces.</p>
-        <p>In the <strong>Capstone Project</strong>, modular hierarchies using the <em>Factory Method</em> improved extensibility and maintained clean architecture.</p>
-      </section>
-
-      <div class="divider"></div>
-
-      <!-- Design Patterns -->
-      <section id="patterns">
-        <h2>Design Patterns</h2>
-        <p>Design patterns provided structured and reusable solutions to common challenges.</p>
-        <ul>
-          <li><em>Strategy Pattern</em> — dynamic execution of transactions in the Banking System.</li>
-          <li><em>Adapter Pattern</em> — seamless module integration.</li>
-          <li><em>Bridge Pattern</em> — decoupled logic from data layers in the Capstone Project.</li>
-          <li><em>Observer Pattern</em> — event-driven updates in analytics modules.</li>
-        </ul>
-        <p>These patterns enhanced modularity, reusability, and scalability across projects.</p>
-      </section>
-
-      <div class="divider"></div>
-
-      <!-- Software Architecture -->
-      <section id="architecture">
-        <h2>Software Architecture</h2>
-        <p>Architectural design ensured scalability, security, and maintainability through layered and modular systems.</p>
-        <p>In the <strong>Capstone Project</strong>, a <em>Layered MVC Architecture</em> separated UI, logic, and data components. Security features like authentication and encryption were embedded as part of <em>secure-by-design</em>.</p>
-        <p>Exploration of <strong>Microservices</strong> and <strong>Event-Driven</strong> styles provided insight into distributed system trade-offs.</p>
-      </section>
-
-      <div class="divider"></div>
-
-      <!-- AI & Data Science Adaptability -->
-      <section id="ai-adaptability">
-        <h2>AI & Data Science Adaptability</h2>
-        <p>Designed systems to integrate smoothly with AI models and data analysis workflows.</p>
-        <p>In the <strong>Capstone Project</strong>, modular data pipelines were developed to preprocess and feed information into predictive models. APIs were created for dynamic model updates without modifying the system core.</p>
-      </section>
-
-      <div class="divider"></div>
-
-      <!-- Artefacts Showcase -->
-      <section id="artefacts">
-        <h2>Artefacts Showcase</h2>
-        <ul>
-          <li><strong>Unit 3:</strong> Thread-Safe Banking System — concurrency control using <code>RLock</code>.</li>
-          <li><strong>Unit 5:</strong> Software Architecture Plan — layered and secure system blueprint.</li>
-          <li><strong>Unit 8:</strong> Design Pattern Implementations — Strategy and Adapter demonstrations.</li>
-          <li><strong>Capstone Project:</strong> AI-ready architecture integrating analytics and role-based security.</li>
-        </ul>
-        <p>GitHub Repository: <a href="#">(add link)</a></p>
-      </section>
-
-      <div class="divider"></div>
-
-      <!-- Academic & Employability Skills -->
-      <section id="skills">
-        <h2>Academic & Employability Skills</h2>
-        <ul>
-          <li><strong>Critical Thinking:</strong> Assessing design trade-offs and scalability.</li>
-          <li><strong>Problem-Solving:</strong> Debugging secure and concurrent systems.</li>
-          <li><strong>Research:</strong> Applying OWASP, NIST, and SOLID methodologies.</li>
-          <li><strong>Time Management:</strong> Delivering projects under deadlines.</li>
-          <li><strong>Communication:</strong> Collaborating and documenting technical solutions clearly.</li>
-        </ul>
-      </section>
-
-      <div class="divider"></div>
-
-      <!-- Professional Development Plan -->
-      <section id="pdp">
-        <h2>Professional Development Plan</h2>
-        <p><strong>Strengths:</strong> Software architecture, design, and security awareness.</p>
-        <p><strong>Areas for Improvement:</strong> AI integration, cloud deployment, and leadership.</p>
-        <h3>Future Goals:</h3>
-        <ul>
-          <li>Certifications in <strong>Software Architecture</strong> and <strong>Cybersecurity</strong>.</li>
-          <li>Experience with <strong>AI model deployment</strong> (TensorFlow, PyTorch).</li>
-          <li>Develop microservices using <strong>Docker</strong> and <strong>Kubernetes</strong>.</li>
-        </ul>
-        <h3>Action Plan:</h3>
-        <p>Continue learning via advanced courses, contribute to open-source projects, and seek mentorship for professional growth.</p>
-      </section>
-
-      <div class="divider"></div>
-
-      <!-- References -->
-      <section id="references">
-        <h2>References</h2>
-        <ol>
-          <li>Gamma, E., Helm, R., Johnson, R. & Vlissides, J. (1994). <em>Design Patterns: Elements of Reusable Object-Oriented Software.</em> Addison-Wesley.</li>
-          <li>Martin, R.C. (2002). <em>Agile Software Development: Principles, Patterns, and Practices.</em> Prentice Hall.</li>
-          <li>OWASP Foundation (2024). <em>OWASP Top Ten Security Risks.</em> Available at: https://owasp.org</li>
-          <li>NIST (2020). <em>SP 800-53 Rev. 5: Security and Privacy Controls for Information Systems.</em> U.S. Department of Commerce.</li>
-          <li>Fowler, M. (2004). <em>Patterns of Enterprise Application Architecture.</em> Addison-Wesley.</li>
-          <li>Buschmann, F. et al. (1996). <em>Pattern-Oriented Software Architecture.</em> Wiley.</li>
-          <li>Spring, J. et al. (2021). "Time to Change the CVSS?" <em>IEEE Security & Privacy</em>, 19(2), pp.74–78.</li>
-          <li>FIRST.org (2025). <em>Stakeholder-Specific Vulnerability Categorization (SSVC) v2.0.</em> Available at: https://www.first.org/ssvc</li>
-          <li>Larman, C. (2004). <em>Applying UML and Patterns.</em> 3rd ed. Prentice Hall.</li>
-          <li>Pressman, R.S. & Maxim, B.R. (2020). <em>Software Engineering: A Practitioner’s Approach.</em> 9th ed. McGraw-Hill.</li>
-          <li>Sommerville, I. (2016). <em>Software Engineering.</em> 10th ed. Pearson.</li>
-          <li>Pahl, C. & Giesecke, S. (2019). <em>Software Architecture for Cloud and AI Systems.</em> Springer.</li>
-          <li>Holland, R. (2022). <em>Secure Software Development Life Cycle Implementation Guide.</em> Gartner.</li>
-          <li>University of Essex Online (2025). <em>AOODP Module Handbook.</em></li>
-        </ol>
-      </section>
-
+    <section id="intro">
+      <h2>Intro / Module Context</h2>
+      <p>This e-portfolio depicts my learning during the Advanced Object-Oriented Design and Programming (AOODP) module.</p>
+      <p>covers the progression from understanding object-oriented principles to building software systems in a secure and maintainable manner.</p>
+      <p>The module allowed me to learn architectural design, multi-threading, design patterns and secure coding practices through working on personal and group projects like the Thread-Safe Banking System and Capstone Project.</p>
+      <p>This portfolio represents how I have evolved as a software engineer who can create solutions by thinking like an academic and acting like the industry.</p>
     </section>
+
+    <div class="divider"></div>
+
+    <section id="learning">
+      <h2>Learning Outcomes — Evidence Map</h2>
+      <p>This section connects the module learning outcomes to practical evidence and reflective thinking.</p>
+      <ul>
+        <li>Leveraging design patterns for reusable and maintainable code.</li>
+        <li>Strategy, Adapter and Composite patterns in the Capstone Project to avoid code repetition as much as possible and add flexibility.</li>
+        <li>Architect and design systems at scale with security and reliability in mind.</li>
+        <li>Refactored to a layered architecture and introduced DI (dependency injection) to improve scalability and maintainability.</li>
+        <li>Build software that can be modified for AI and data work.</li>
+        <li>Developed modular data pipelines that connected machine learning models and analytics tools.</li>
+        <li>Leverage more advanced OOP concepts for solving difficult problems.</li>
+        <li>Utilized Abstraction, Encapsulation, Inheritance, and Polymorphism concepts in the multi-threaded environment to enhance maintainability.</li>
+        <li>He should do what is necessary for secure coding during software development.</li>
+        <li>Applied validation, parameterized queries, encryption and bcrypt padding to secure data.</li>
+      </ul>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="secure">
+      <h2>Secure Coding Practices</h2>
+      <p>Security was also considered from all development levels according to defense-in-depth.</p>
+      <p>In the Thread-Safe Banking System, I validated inputs, encrypted passwords by using “bcrypt” and make sure to avoid race conditions with RLock.</p>
+      <p>I utilized parameterized SQL queries and role-based access control (RBAC) in the Capstone Project to help avoid injection and privilege escalation vulnerabilities.</p>
+      <p>These approaches were in line with secure-by-design and conformed to OWASP, NIST SP 800-53 ilities (confidentiality, integrity and availability).</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="oop">
+      <h2>Advanced OOP Principles</h2>
+      <p>I had to apply good old object-oriented principles throughout the module:</p>
+      <ul>
+        <li>Encapsulation : It provides protected integrity of the data in the Banking System.</li>
+        <li>Polymorphism: Collected several transaction operations with shared interfaces.</li>
+        <li>Inheritance: Code reuse, some behaviour shared between different type of transactions.</li>
+        <li>Abstract: Generic class hierarchies were used to simplify an intricate logic.</li>
+      </ul>
+      <p>In the Capstone Project, I used Factory Method to modularize class hierarchies and support easy extension for analytics and AI components.</p>
+      <p>This judicious use of OOP improved the maintainability, scalability and ease of understanding, it also leveraged SOLID and GRASP design principles.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="patterns">
+      <h2>Design Patterns</h2>
+      <p>Design patterns supplied a sort of best way to most effectively solve certain problems.</p>
+      <p>With the Thread-Safe Banking System example, we could process transactions without changing the application of core logic during runtime.</p>
+      <p>The existing systems could now work along with the new modules using the Adapter Pattern.</p>
+      <p>In Capstone Project, the Bridge Pattern helped decoupling between data access and business logic, while Observer Pattern was used to handle event driven updates in analytics modules.</p>
+      <p>Both examples slimmed down the dependencies and increased architectural flexibility and reusability.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="architecture">
+      <h2>Software Architecture</h2>
+      <p>It really helped grow my architectural thinking, which is the layered, modular and secure systems.</p>
+      <p>In the Capstone Project I implemented a Layered MVC Architecture, separating presentation, logic and data layers for maintainable and testable code.</p>
+      <p>Security aspects including encryption and authentication were embedded into the structure based on secure-by-design concept.</p>
+      <p>I also dived into Microservices and Event-Driven approaches, learnt about trade-offs in scalability, performance and complexity.</p>
+      <p>These habits showed that I could create enterprise grade systems that are ready for AI to be integrated in the future.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="ai">
+      <h2>AI & Data Science Adaptability</h2>
+      <p>This module got me up to speed on how to build systems that are AI- and data analytics-ready.</p>
+      <p>In the Capstone Project I created a modular pipeline to process and input data into predictive models.</p>
+      <p>By splitting off AI systems in modules on their own the architecture was flexible and maintainable.</p>
+      <p>The APIs facilitated model updates without breaking core logic, indicative of its suitability for AI-driven environments and data-centric designs.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="artefacts">
+      <h2>Artefacts Showcase</h2>
+      <ul>
+        <li>Section 3: Thread-Safe Banking System — How to build a thread-safe system– Use of RLock.</li>
+        <li>Unit 5: Design a Software Architecture Plan — Developed layered, secure and modular architectures.</li>
+        <li>Unit 8: Implementing Design Patterns — Showed Strategy and Adapter patterns.</li>
+        <li>Capstone Project: Create a resiliant AI-ready software stack with built-in reporting/analytics.</li>
+      </ul>
+      <p>GitHub Repo: (link to come)</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="skills">
+      <h2>Academic & Employability Skills</h2>
+      <p>The module worked to develop both academic and practitioner capabilities.</p>
+      <ul>
+        <li>Critical Thinking: Considering the trade off in architectural design.</li>
+        <li>Problem-solving: Debugging concurrent, and secure systems.</li>
+        <li>Research and Analysis: Participating in OWASP, NIST and alternative analysis frameworks.</li>
+        <li>Time Management: Kept to strict academic and project deadlines.</li>
+        <li>Communication: Works well in discussion and documentation.</li>
+      </ul>
+      <p>This skillset is extremely relevant to real-life software engineering positions in industry.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="pdp">
+      <h2>Professional Development Plan (PDP)</h2>
+      <p>Software architecture, OOP design and security awareness.</p>
+      <p>Needs to Improve: Further advanced AI integration and management of software projects.</p>
+      <h3>Future Goals:</h3>
+      <ul>
+        <li>Get certified in Software Architecture and Cybersecurity.</li>
+        <li>Get hands on experience deploying AI models(both TensorFlow, PyTorch).</li>
+        <li>Architect microservices leveraging Docker and Kubernetes for scaleable solutions.</li>
+      </ul>
+      <h3>Action Plan:</h3>
+      <ul>
+        <li>Keep studying through online classes and from a mentor.</li>
+        <li>Contribute to open-source AI/architecture projects.</li>
+        <li>Hone leadership and documentation skills by working with a team.</li>
+      </ul>
+    </section>
+
   </body>
 </html>
